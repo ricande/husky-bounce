@@ -1,0 +1,26 @@
+[package]
+name = "rustyhusky"
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.87"
+description = "A Rust starter framework for portrait games with automatic 1080 x 1920, 60 fps gameplay recording"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/ricande/RustyHusky"
+readme = "README.md"
+publish = false
+
+[dependencies]
+macroquad = { version = "0.4", features = ["audio"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[patch.crates-io]
+# miniquad 0.4.11 as published, plus one fix: deleting a texture makes the
+# texture-binding cache forget it (vendor/patches). Without it, text can turn
+# into black rectangles when macroquad's font atlas grows (macroquad#1006).
+# See docs/UPSTREAM_FIXES.md, including how to drop this again.
+miniquad = { path = "vendor/miniquad-0.4.11" }
+
+[profile.dev.package."*"]
+# Optimise dependencies even in debug builds so `cargo run` stays smooth.
+opt-level = 2
