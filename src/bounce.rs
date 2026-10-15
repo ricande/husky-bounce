@@ -14,8 +14,9 @@ use crate::t;
 use crate::ui::{Input, Key};
 use crate::view::{with_alpha, View, ACCENT, FIELD_W, NEON, TEXT};
 
-/// Length of a level: the longest YouTube Short is 3 minutes.
-pub const LEVEL_SECONDS: f32 = 180.0;
+/// Length of a level: a little under 3:00, the longest YouTube Short (and the
+/// framework's video limit), so a whole level fits in one Short.
+pub const LEVEL_SECONDS: f32 = 179.0;
 const CENTRE: Vec2 = Vec2::new(FIELD_W / 2.0, 520.0);
 const OUTER_R: f32 = 240.0;
 const RING_SPACING: f32 = 48.0;

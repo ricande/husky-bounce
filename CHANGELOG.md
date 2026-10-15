@@ -4,6 +4,13 @@ All notable changes to Husky Bounce are documented here.
 
 ## [Unreleased]
 
+### Changed
+
+- Levels last 179 s instead of 180 s: a 180 s level gave a 180.05 s video,
+  just over the 3:00 limit for Shorts.
+- Framework files updated from RustyHusky: videos stop at 3:00
+  (`MAX_VIDEO_SECONDS`), the REC marker shows the limit.
+
 ### Added
 
 - Started from the RustyHusky template 0.2.0 (plus its unreleased changes).

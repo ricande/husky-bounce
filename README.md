@@ -5,8 +5,8 @@
 A portrait game that mostly plays itself: a ball bounces inside rotating
 rings, every bounce plays a note and may add a ball, and three minutes later
 hundreds of balls pour out through the gaps. Made to be recorded as a
-YouTube Short, TikTok or Instagram Reel: every level is exactly 180 seconds
-and is recorded automatically as a 1080 × 1920, 60 fps MP4 with sound.
+YouTube Short, TikTok or Instagram Reel: every level is 179 seconds, just
+under the 3:00 limit for Shorts, and is recorded automatically as a 1080 × 1920, 60 fps MP4 with sound.
 
 The rules are in [docs/GAME_RULES.md](docs/GAME_RULES.md).
 

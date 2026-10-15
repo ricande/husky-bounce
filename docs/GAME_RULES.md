@@ -8,10 +8,11 @@ Husky Bounce mostly plays itself: it starts with one ball and ends in chaos.
 - Each ring has a gap. A ball that slips through moves out to the next ring;
   through the outermost ring it escapes, falls off the screen and scores one
   point ("Escaped").
-- A level lasts 180 seconds (`LEVEL_SECONDS`, the longest YouTube Short). The
-  clock at the top counts down.
+- A level lasts 179 seconds (`LEVEL_SECONDS`), a little under 3:00, the
+  longest YouTube Short, so the whole level fits in one. The clock at the top
+  counts down.
 - The chaos builds steadily: the field may hold at most
-  1 + 399 × (time / 180 s)² balls, so about 40 after one minute, 180 after
+  1 + 399 × (time / 179 s)² balls, so about 40 after one minute, 180 after
   two and 400 at the end. The rings spin up to four times faster and their
   gaps widen, so the swarm pours out at the end.
 - The field is never empty: when the last ball has escaped, a new one starts
