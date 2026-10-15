@@ -46,9 +46,9 @@ see [docs/UPSTREAM_FIXES.md](docs/UPSTREAM_FIXES.md).
 
 ## Assets
 
-`assets/paw.png` (generated with ImageMagick) and `assets/chime.wav` (an
-880 Hz tone generated with FFmpeg) were made for RustyHusky and are covered
-by the project's license, GPL-3.0-or-later.
+`assets/note0.wav` … `note7.wav` (sine tones) and `assets/escape.wav` were
+generated with FFmpeg for Husky Bounce and are covered by the project's
+license, GPL-3.0-or-later.
 
 ## FFmpeg
 

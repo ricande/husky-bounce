@@ -6,9 +6,9 @@
 
 mod app;
 mod audio;
+mod bounce;
 mod capture;
 mod config;
-mod example;
 mod game;
 mod i18n;
 mod pacing;
@@ -29,7 +29,7 @@ use view::View;
 
 /// The game the framework runs. Replace it with your own type that
 /// implements `game::Game`.
-type ActiveGame = example::ExampleGame;
+type ActiveGame = bounce::HuskyBounce;
 
 /// Upper bound on simulated time per frame, so a hitch never causes a
 /// burst of catch-up steps.
